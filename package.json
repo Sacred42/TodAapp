@@ -1,0 +1,17 @@
+{
+  "name": "eu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "applic.js",
+  "scripts": {
+    "start": "node applic.js",
+    "dev" : "node applic.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "nodemon": "^2.0.4"
+  }
+}
