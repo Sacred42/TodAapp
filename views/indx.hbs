@@ -1,13 +1,36 @@
-<form action="/in" method="POST">
-    <input type="checkbox" name="man">
-    <input type="checkbox" name="woman">
-    <input type="checkbox" name="rus">
-    <input type="checkbox" name="uk">
-    <input type="checkbox" name="french">
-    <input type="checkbox" name="japan">
+{{!-- <form action="/in" method="POST">
+    <input type="radio" name="gender" value ="man">
+    <input type="radio" name="gender" value ="woman">
+    <input type="radio" name="country" value ="rus">
+    <input type="radio" name="country" value ="uk">
+    <input type="radio" name="country" value ="french">
+    <input type="radio" name="country" value ="japan">
     <h3>пРИВЕТСТВУЮ!</h3>
     <button type="submit">нажать</button>
 </form>
-<input type="text" name="txt" value={{txt}}>
+<input type="text" name="txt" value={{txt}}> --}}
+
+<div>
+<div>
+    <div class="gender d-flex flex-column mt-1">
+     <label for="">Выберети пол</label>
+     <div><input type="radio" name="gender" value ="man">Мужской</input></div>
+     <div><input type="radio" name="gender" value ="woman">Женский</input></div>
+    </div>
+    
+    <div class="country d-flex flex-column mt-3">
+    <label for="">Выберети страну</label>
+    <div> <input type="radio" name="country" value ="rus">Россия</input></div>
+    <div><input type="radio" name="country" value ="uk">Америка</input></div>
+    <div><input type="radio" name="country" value ="french">Франция</input></div>
+    <div><input type="radio" name="country" value ="japan">Япония</input></div>
+ </div>
+      
+</div>
+    
+    <h3>пРИВЕТСТВУЮ!</h3>
+    <button class="but" >нажать</button>
+    <input class="inp"  type="text"> 
+</div>
 
 

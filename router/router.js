@@ -6,14 +6,16 @@ router.get('/' ,(req , res ) =>{
 });
 
 router.post('/in' , (req, res)=>{
-    
+    var txt ;
     if(req.body.man){
         console.log('Выбран мужик!');
         if(req.body.rus){
             console.log('русский мужик');
+            var txt = 'Толя';
         }
         else if(req.body.uk){
             console.log('бритаский мужик');
+            var txt = 'Brown';
         }
 
     }
@@ -21,12 +23,15 @@ router.post('/in' , (req, res)=>{
         console.log('Выбрана баба!');
         if(req.body.rus){
             console.log('русская женщина');
+            var txt = 'Ира';
         }
         else if(req.body.uk){
             console.log('бритиш женщина!');
+            var txt = 'Angelina';
         }
     } 
-    var txt = 'опа';
+   // return txt;
+    
     res.render('indx' , {txt});
     
 });

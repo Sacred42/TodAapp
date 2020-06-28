@@ -1,0 +1,16 @@
+.class_for_head_h1{
+    background-color: blue;
+    text-align: center;
+    font-size: 43px;
+    padding: 28px;
+}
+
+.for_add{
+    float: right;
+    padding: 25px;
+}
+
+.field{
+    display: lnline-block;
+    width: 260px;
+}
